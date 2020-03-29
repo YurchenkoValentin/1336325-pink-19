@@ -5,32 +5,30 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-img" src="#" alt="Логотип приложения">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="#" alt="Логотип приложения">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a>Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a>HTML Academy</a>
+              <a class="site-list__link">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
-    <main class="main-page">
+    <main class="main">
       <section class="slogan">
         <h2 class="slogan__title">Взгляните на жизнь иначе!</h2>
         <img class="slogan__img" src="#" alt="Обработка фотографий нашим приложением">
@@ -48,22 +46,23 @@
             <a class="download__windows-link" href="#"></a>
           </li>
         </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantage">
         <h2 class="advatage__title-question">Устали от серости мегаполиса?</h2>
         <h2 class="advantage__title-offer">Нам есть, что вам предложить!</h2>
-        <ul class="advantage__list">
-          <li class="advantage__item">
-            <h3 class="advantage__item-title">Поднимает настроение</h3>
-            <p class="advantage__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="advantage__list advantage-list">
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__item-title">Поднимает настроение</h3>
+            <p class="advantage-list__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantage__item">
-            <h3 class="advantage__item-title">Меняет мир вокруг</h3>
-            <p class="advantage__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__item-title">Меняет мир вокруг</h3>
+            <p class="advantage-list__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantage__item">
-            <h3 class="advantage__item-title">Заводит новых друзей</h3>
-            <p class="advantage__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__item-title">Заводит новых друзей</h3>
+            <p class="advantage-list__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
         <img class="advantage__app-screen" src="#" alt="Пример работы нашего приложения">
@@ -102,16 +101,24 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
+    <footer class="footer">
+      <div class="footer__contacts contacts">
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами</p>
-        <b class="contacts__requisite-phone
-        ">Звоните:</b>
-        <a class="contacts__phone" href="tel:+7812555-66-66">+7(812)555-66-66</a>
-        <b class="contacts__requisite-email">Пишите:</b>
-        <a class="contacts__email" href="#">mail@htmlacademy.ru</a>
-        <b class="contacts__requisite-address">Приезжайте в гости:</b>
-        <a class="contacts__address" href="#">ул. Большая Конюшенная, 19/8</a>
+        <ul class="contacts__list">
+          <li class="contacnts__list-item">
+            <p class="contacts__list-text
+            ">Звоните:</p>
+            <a class="contacts__list-number" href="tel:+7812555-66-66">+7(812)555-66-66</a>
+          </li>
+          <li class="contacnts__list-item">
+            <p class="contacts__list-text">Пишите:</p>
+            <a class="contacts__list-email" href="#">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacnts__list-item">
+            <p class="contacts__list-text">Приезжайте в гости:</p>
+            <a class="contacts__list-address" href="#">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
       </div>
       <div class="map">
         <iframe class="map__link" src="address" frameborder="0"></iframe>

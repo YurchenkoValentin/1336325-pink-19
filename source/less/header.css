@@ -1,0 +1,27 @@
+.header {
+  background-color: #283645;
+}
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+.site-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 65px;
+  color: white;
+  background-color: #283645;
+  text-align: center;
+  font-weight: bold;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+.site-list__link {
+  color: white;
+  text-decoration: none;
+}

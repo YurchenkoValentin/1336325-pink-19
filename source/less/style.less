@@ -1,12 +1,16 @@
-@main-color: #283645;
-
-@text-color: white;
 
 @import "header.less";
 @import "slogan.less";
 @import "download.less";
 @import "advantage.less";
-
+@import "main-nav.less";
+@import "site-list.less";
+@import "photo-main.less";
+@import "feed.less";
+@import "feed-item.less";
+@import "footer.less";
+@import "main-contest.less";
+@import "variable.less";
 
 @font-face {
   font-family: "Open Sans", sans-serif;
@@ -34,9 +38,22 @@ body {
   font-size: 14px;
   width: 320px;
   background-color: white;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+
+  }
 }

@@ -1,11 +1,36 @@
 .header {
   background-color: #283645;
 }
-.slogan {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  height: 395px;
+.header__close-icon {
+  position: absolute;
+  left: 260px;
+  top: 20px;
+  background-color: inherit;
+  border: none;
 }
-.slogan__title {
+.header__logo-img {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+@media (min-width: 660px) {
+  .header {
+    width: 660px;
+  }
+  .header__close-icon {
+    left: 560px;
+  }
+  .header__logo-img {
+    padding-left: 20px;
+    padding-bottom: 43px;
+    padding-top: 27px;
+  }
+}
+.download {
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  height: 660px;
+}
+.download__title {
   color: white;
   font-size: 24px;
   font-weight: 300;
@@ -16,11 +41,8 @@
   text-transform: initial;
   margin-top: -15px;
 }
-.slogan__img {
+.download__img {
   margin-top: 6px;
-}
-.download {
-  background-color: #283645;
 }
 .download__link {
   display: inline-block;
@@ -48,7 +70,7 @@
 }
 .advantage {
   background-color: #f2f2f2;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
 }
 .advatage__title-question,
@@ -62,16 +84,22 @@
   margin-left: 82px;
 }
 .main-nav__list {
+  width: 100%;
   display: flex;
   flex-direction: column;
   list-style: none;
   padding-left: 0;
 }
+@media (width: 660px) {
+  .main-nav__list {
+    width: 660px;
+  }
+}
 .site-list__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
+  min-width: 320px;
   height: 65px;
   color: white;
   background-color: #283645;
@@ -92,7 +120,7 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
@@ -106,7 +134,7 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
@@ -214,28 +242,35 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
   background-position-y: -60px;
   margin-bottom: 0;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 @font-face {
   font-family: "Open Sans", sans-serif;
-  src: url(../fonts/opensans.woff);
+  src: url("../fonts/opensans.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans", sans-serif;
-  src: url(../fonts/opensansbold.woff);
+  src: url("../fonts/opensansbold.woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans", sans-serif;
-  src: url(../fonts/opensanslight.woff);
+  src: url("../fonts/opensanslight.woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -254,4 +289,9 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+@media (min-width: 660px) {
+  body {
+    width: 660px;
+  }
 }

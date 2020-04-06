@@ -1,3 +1,5 @@
+@import "variable.less";
+
 .advantage-list {
   padding-left: 0;
   margin-top: 120px;
@@ -8,4 +10,11 @@
   width: 265px;
   margin-left: 30px;
   text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .advantage-list__item-text {
+    width: 308px;
+  }
 }

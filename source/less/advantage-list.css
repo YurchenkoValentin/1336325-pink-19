@@ -8,3 +8,8 @@
   margin-left: 30px;
   text-align: center;
 }
+@media (min-width: 660px) {
+  .advantage-list__item-text {
+    width: 308px;
+  }
+}

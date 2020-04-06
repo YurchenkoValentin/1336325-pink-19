@@ -1,7 +1,8 @@
+@import "variable.less";
+
 .advantage {
-  background-color:
-  #f2f2f2;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
 }
 
@@ -15,4 +16,24 @@
 
 .advantage__app-screen {
   margin-left: 82px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage {
+
+  }
+  .advatage__title-question {
+    padding-top: 53px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .advantage__title-offer {
+    margin-top: 0;
+    font-size: 40px;
+    font-weight: 300;
+    width: 345px;
+    text-align: center;
+    margin-left: 165px;
+  }
 }

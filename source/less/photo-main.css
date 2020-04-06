@@ -5,7 +5,7 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
@@ -19,10 +19,23 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
   background-position-y: -60px;
   margin-bottom: 0;
+}
+@media (min-width: 660px) {
+  .photo-main__text {
+    display: inline-block;
+    width: 660px;
+    height: 330px;
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 80px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top center;
+    background-position-y: -60px;
+  }
 }

@@ -8,8 +8,29 @@
   margin-left: 30px;
   text-align: center;
 }
+.advantage-list__item-title {
+  font-weight: 18px;
+  line-height: 24px;
+}
+.advantage-list__item-text {
+  font-weight: 14px;
+  line-height: 24px;
+}
 @media (min-width: 660px) {
-  .advantage-list__item-text {
-    width: 308px;
+  .advantage-list {
+    padding-left: 290px;
+  }
+  .advantage-list__item {
+    text-align: start;
+  }
+  .advantage-list__item:first-child {
+    width: 294px;
+  }
+  .advantage-list__item:nth-child(2) {
+    width: 309px;
+    word-spacing: 2px;
+  }
+  .advantage-list__item:last-child {
+    width: 307px;
   }
 }

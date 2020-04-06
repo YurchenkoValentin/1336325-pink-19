@@ -1,0 +1,5 @@
+@media (min-width: 660px) {
+  .footer__wrapper {
+    display: flex;
+  }
+}

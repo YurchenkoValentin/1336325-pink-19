@@ -1,6 +1,3 @@
-.feed__call {
-  outline: plum 1px solid;
-}
 .feed__text {
   width: 245px;
   font-size: 14px;
@@ -11,4 +8,11 @@
   padding-top: 56px;
   padding-bottom: 56px;
   margin: 0;
+}
+@media (min-width: 660px) {
+  .feed__text {
+    width: 440px;
+    font-size: 18px;
+    padding-left: 110px;
+  }
 }

@@ -6,3 +6,8 @@
     width: 660px;
   }
 }
+@media (min-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+}

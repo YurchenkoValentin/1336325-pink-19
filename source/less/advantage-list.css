@@ -34,3 +34,14 @@
     width: 307px;
   }
 }
+@media (min-width: 1200px) {
+  .advantage-list {
+    display: flex;
+    width: 885px;
+    justify-content: space-between;
+    padding-left: 150px;
+  }
+  .advantage-list__item {
+    text-align: center;
+  }
+}

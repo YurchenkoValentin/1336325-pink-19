@@ -76,7 +76,7 @@
   position: absolute;
   height: 0;
 }
-@media (width: 660px) {
+@media (min-width: 660px) {
   .main-nav__list {
     width: 660px;
   }
@@ -87,5 +87,20 @@
     padding-left: 20px;
     padding-bottom: 43px;
     padding-top: 27px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 112px;
+  }
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 625px;
+  }
+  .main-nav__toggle {
+    display: none;
   }
 }

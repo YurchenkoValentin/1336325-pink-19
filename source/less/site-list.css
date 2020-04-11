@@ -16,3 +16,10 @@
   color: white;
   text-decoration: none;
 }
+@media (min-width: 1200px) {
+  .site-list__item {
+    justify-content: space-between;
+    min-width: 0;
+    border: none;
+  }
+}

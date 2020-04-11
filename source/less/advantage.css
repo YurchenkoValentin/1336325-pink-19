@@ -83,3 +83,21 @@
     border-radius: 50%;
   }
 }
+@media (min-width: 1200px) {
+  .advantage {
+    width: 1200px;
+  }
+  .advantage__title-offer {
+    margin-left: 420px;
+  }
+  .advantage__app-screen-tablet {
+    display: none;
+  }
+  .advantage__research-container {
+    background-color: inherit;
+  }
+  .advantage__research-wrapper {
+    width: 440px;
+    padding-left: 650px;
+  }
+}

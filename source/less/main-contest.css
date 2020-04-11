@@ -5,7 +5,7 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
@@ -19,10 +19,42 @@
   padding-top: 35px;
   margin-top: -14px;
   color: white;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   min-width: 320px;
   min-height: 145px;
   background-position-y: -60px;
   margin-bottom: 0;
+}
+@media (min-width: 660px) {
+  .main-contest__text {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    margin-top: -14px;
+    color: white;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top center;
+    min-width: 320px;
+    min-height: 145px;
+    background-position-y: -60px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-contest__text {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 35px;
+    margin-top: -14px;
+    color: white;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top center;
+    width: 1200px;
+    height: 285px;
+    background-position-y: -60px;
+    margin-bottom: 0;
+  }
 }

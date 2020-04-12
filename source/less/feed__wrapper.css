@@ -1,7 +1,0 @@
-@media (min-width: 660px) {
-  .feed__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}

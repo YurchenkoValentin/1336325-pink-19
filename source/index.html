@@ -11,45 +11,54 @@
       <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo" href="index.html">
-           <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
+            <picture>
+              <source srcset="img/logo-pink-white-mobile.svg" type="image/svg+xml" media="(max-width: 659px)">
+              <source srcset="img/logo-pink-white-tablet.svg" type="image/svg+xml" media="(max-width: 959px)">
+              <source srcset="img/logo-pink-white-desktop.svg" type="image/svg+xml" media="(min-width: 960px)">
+              <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" width="75" height="23">
+            </picture>
           </a>
-          <button class="main-nav__toggle" type="button">
+          <!-- <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__burger"></span>
             <span class="main-nav__burger"></span>
             <span class="main-nav__burger"></span>
-          </button>
+          </button> -->
           <button class="main-nav__close-icon" type="button">
-            <!-- <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path fill="#ffffff" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-            </svg> -->
+            </svg>
             <span class="visually-hidden">Закрыть</span>
           </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
     </header>
 
     <main class="main">
       <section class="download">
         <div class="download__title-container">
-          <p class="download__title">Взгляните на жизнь иначе!</p>
+          <div class="download__title-wrapper">
+            <p class="download__title">Взгляните на жизнь иначе!</p>
+          </div>
         </div>
         <div class="download__link-container">
-          <a class="download__link" href="#">Скачать приложение</a>
+          <div class="download__link-wrapper">
+            <a class="download__link" href="#">Скачать приложение</a>
+          </div>
           <ul class="download__list">
             <li class="download__item">
               <a class="download__ios-link" href="#">
@@ -86,7 +95,7 @@
       </section>
 
       <section class="advantage">
-        <p class="advatage__title-question">Устали от серости мегаполиса?</p>
+        <p class="advantage__title-question">Устали от серости мегаполиса?</p>
         <p class="advantage__title-offer">Нам есть, что вам предложить!</p>
         <ul class="advantage-list">
           <li class="advantage-list__item">

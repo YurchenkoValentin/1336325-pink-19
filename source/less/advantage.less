@@ -1,21 +1,40 @@
 @import "variable.less";
 
 .advantage {
+  position: relative;
+  overflow: hidden;
   background-color: #f2f2f2;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    z-index: -1;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
 }
 
-.advatage__title-question,
+.advantage__title-question,
 .advantage__title-offer {
   color: #283645;
   font-size: 24px;
   text-align: center;
   margin-top: 46px;
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage__title-offer {
+  margin-top: 38px;
 }
 
 .advantage__app-screen-mobile {
-  margin-left: 82px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantage__app-screen-tablet {
@@ -27,20 +46,28 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advatage__title-question {
+  .advantage__title-question {
     padding-top: 53px;
     margin: 0;
     font-size: 40px;
     font-weight: 300;
   }
 
+  .advantage__title-question {
+    width: 608px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+  }
+
   .advantage__title-offer {
-    margin-top: 0;
+    margin-top: -6px;
     font-size: 40px;
     font-weight: 300;
     width: 345px;
     text-align: center;
-    margin-left: 165px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .advantage__app-screen-tablet {
@@ -65,15 +92,16 @@
     width: 302px;
     word-spacing: 2px;
     height: 202px;
-    padding-left: 350px;
-    padding-top: 100px;
+    padding-top: 98px;
     padding-bottom: 83px;
+    margin-left: 45.7%;
   }
 
   .advantage__research-title {
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
+    margin-top: 0px;
   }
 
   .advantage__research-text {

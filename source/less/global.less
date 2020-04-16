@@ -25,10 +25,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  width: 320px;
+  min-width: 320px;
   background-color: white;
-  padding: 0;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* *{outline: 1px solid red } */
@@ -49,6 +51,12 @@ ul {
 
  @media (min-width: @tablet-width) {
   body {
-    width: @tablet-width;
+    min-width: @tablet-width;
   }
 }
+
+  @media (min-width: @desktop-width) {
+    body {
+      min-width: @desktop-width;
+    }
+  }

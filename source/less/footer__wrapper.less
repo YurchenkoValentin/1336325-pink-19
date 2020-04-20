@@ -1,7 +1,28 @@
 @import "variable.less";
 
+.footer__wrapper-social-text {
+  margin-right: 50px;
+}
+
+.footer__wrapper-social-img-logo {
+  position: relative;
+  top: 10px;
+  right: 45px;
+}
+
 @media (min-width: @tablet-width) {
   .footer__wrapper {
     display: flex;
+    padding-top: 20px;
+  }
+
+  .footer__wrapper-social-text {
+    padding-top: 5px;
+    padding-right: 15px;
+    margin-right: 0;
+  }
+
+  .footer__wrapper-social-img-logo {
+    position: static;
   }
 }

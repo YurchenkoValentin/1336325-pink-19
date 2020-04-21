@@ -31,10 +31,9 @@
 
 .feed-item__likes-wrapper {
   display: flex;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position-x: 18px;
-  background-position-y: 30px;
+  justify-content: space-between;
+  width: 120px;
+  padding-left: 20px;
   padding-top: 23px;
   padding-bottom: 28px;
 }
@@ -43,7 +42,6 @@
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
-  padding-left: 50px;
 }
 
 .feed-item__wrapper-wide {
@@ -77,10 +75,9 @@
 
 .feed-item__likes-wrapper-wide {
   display: flex;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position-x: 18px;
-  background-position-y: 30px;
+  justify-content: space-between;
+  width: 120px;
+  padding-left: 20px;
   padding-top: 23px;
   padding-bottom: 28px;
 }
@@ -89,7 +86,6 @@
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
-  padding-left: 50px;
 }
 
 .feed-item__img {
@@ -132,19 +128,10 @@
 
   .feed-item__likes-wrapper-wide {
     position: absolute;
-    flex-direction: row-reverse;
     bottom: 80px;
-    left: 395px;
-  }
-
-  .feed-item__likes-wrapper-wide {
+    right: 30px;
     display: flex;
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position-x: 115px;
-    background-position-y: 30px;
-    padding-top: 23px;
-    padding-bottom: 28px;
+    flex-direction: row-reverse;
   }
 
   .feed__item-likes-wide {
@@ -154,7 +141,7 @@
 
 @media (min-width: @desktop-width) {
   .feed-item__img-wide-mobile {
-  display: none;
+    display: none;
   }
 
   .feed-item__img-wide-tablet {
@@ -166,16 +153,30 @@
   }
 
   .feed-item-wide {
-    width: 1200px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .feed-item__wrapper-wide {
-    margin-left: 130px;
     width: 940px;
     padding-bottom: 20px;
+    padding-left: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .feed-item__review-text-wide {
-    width: 983px;
+    width: 880px;
+    font-size: 14px;
+
+  }
+
+  .feed-item__likes-wrapper-wide {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }

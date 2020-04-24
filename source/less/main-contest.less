@@ -1,40 +1,97 @@
 @import "mixin.less";
 @import "variable.less";
 
+
+.main-contest__text-wrapper {
+  box-sizing: border-box;
+  height: 170px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 28px;
+}
+
 .main-contest__text {
-  .main-header;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
+  width: 236px;
+  color: white;
+  margin: 0 auto;
+}
+
+.main-contest__text-bonus-wrapper {
+  padding: 55px 0;
+}
+
+.main-contest__text-bonus {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  width: 271px;
+  margin: 0 auto;
+}
+
+.main-contest__text-bonus--invisible {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .main-contest__text {
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 35px;
-    margin-top: -14px;
-    color: white;
+  .main-contest__text-wrapper {
+    height: 330px;
+    min-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top center;
-    min-width: 320px;
-    min-height: 145px;
-    background-position-y: -60px;
-    margin-bottom: 0;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-contest__text {
+    font-size: 50px;
+    width: 490px;
+  }
+
+  .main-contest__text-bonus {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  .main-contest__text-bonus--invisible {
+    display: inline;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-contest__text {
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 35px;
-    margin-top: -14px;
-    color: white;
+  .main-contest__text-wrapper {
+    box-sizing: border-box;
+    height: 394px;
+    margin-top: -112px;
+    min-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: top center;
-    width: 1200px;
-    height: 285px;
-    background-position-y: -60px;
-    margin-bottom: 0;
+    background-position: center;
+    background-size: cover;
+    padding-top: 168px;
+    padding-bottom: 99px;
+  }
+
+  .main-contest__text {
+    font-size: 50px;
+    width: 777px;
+  }
+
+  .main-contest__text-bonus {
+    width: 752px;
+  }
+
+  .main-contest__text-bonus--invisible {
+    display: inline;
   }
 }

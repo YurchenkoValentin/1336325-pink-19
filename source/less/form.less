@@ -1,0 +1,379 @@
+@import "variable.less";
+
+.form__name-info-wrapper,
+.form__contact-details-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__contact-details-wrapper {
+  margin-top: 42px;
+}
+
+.form__name-info-label,
+.form__contact-details-label {
+  display: block;
+  color: #d22856;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-left: 23px;
+
+  &:not(:nth-child(1)) {
+    margin-top: 26px;
+  }
+}
+
+.form__name-info-input,
+.form__contact-details-input {
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  width: 280px;
+  padding: 23px 0 23px 23px;
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px;
+  height: fit-content;
+  margin-top: 5px;
+
+  &::placeholder {
+    color: #283645;
+  }
+}
+
+.form__achievement-checkbox-container,
+.form__platform-info-container {
+  background-color: #f2f2f2;
+  margin: 42px auto 0 auto;
+}
+
+.form__achievement-title,
+.form__platform-title {
+  font-size: 14px;
+  color: #d22856;
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 42px 0;
+}
+
+.form__achievement-checkbox-wrapper,
+.form__platform-radio-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form__achievement-checkbox,
+.form__platform-radio {
+  display: flex;
+  height: 39px;
+  box-sizing: border-box;
+  margin-bottom: 43px;
+}
+
+.form__achievment-checkbox-label,
+.form__platform-radio-label {
+  margin-left: 32px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__emotions-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.form__emotions-title {
+  font-size: 14px;
+  color: #d22856;
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 42px 0;
+}
+
+.form__emotions-textarea {
+  width: 280px;
+  height: 201px;
+  box-sizing: border-box;
+  border: 2px solid #e5e5e5;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 23px;
+
+  &::placeholder {
+    color: #283645;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.form__submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 52px;
+  width: 280px;
+  text-align: center;
+  height: 63px;
+  background-color: #2aab6d;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__text-required {
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.form__text-required--red {
+  color: #d4345f;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__name-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 622px;
+    order: 1;
+  }
+
+  .form__data-wrapper {
+    display: flex;
+    margin-bottom: 52px;
+  }
+
+  .form__name-info-label {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .form__name-info-input {
+    display: flex;
+    width: 100%;
+    height: 59px;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .form__platfrom-info-wrapper {
+    display: flex;
+    order: 2;
+  }
+
+  .form__fieldset-platfrom,
+  .form__fieldset-contact-details {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .form__fieldset-contact-details {
+    padding-left: 58px;
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
+  .form__platform-title {
+    width: 360px;
+  }
+
+  .form__platform-info-container {
+    background-color: #ffffff;
+    margin-top: 0;
+  }
+
+  .form__contact-details-wrapper {
+    width: 660px;
+    display: flex;
+    order: 3;
+  }
+
+  .form__contact-details-title {
+    font-size: 14px;
+    color: #d22856;
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .form__contact-data-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__contact-details-input {
+    order: 1;
+    padding: 14px 0 14px 20px;
+    width: 500px;
+  }
+
+  .form__contact-details-label {
+    order: 2;
+  }
+
+  .form__achievement-wrapper {
+    display: flex;
+    order: 4;
+  }
+
+  .form__achievement-checkbox-container {
+    background-color: #ffffff;
+  }
+
+  .form__achievement-title {
+    width: 436px;
+  }
+
+  .form__fieldset-achievement {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .form__emotions-wrapper {
+    width: 660px;
+    display: flex;
+    order: 5;
+  }
+
+  .form__emotions-container {
+    margin: 0 auto 0 auto;
+  }
+
+  .form__fieldset-emotions {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-bottom: 40px;
+  }
+
+  .form__emotions-textarea {
+    width: 496px;
+    height: 189px;
+  }
+
+  .form__submit-wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 68px;
+    margin-bottom: 85px;
+    width: 620px;
+    justify-content: space-between;
+    order: 6;
+  }
+
+  .form__submit {
+    margin: 0;
+  }
+
+  .form__text-required {
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    width: 960px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form__name-info-wrapper {
+    margin: 0;
+    width: 435px;
+    margin-right: 70px;
+  }
+
+  .form__platfrom-info-wrapper,
+  .form__fieldset-platfrom {
+    margin: 0;
+    width: 435px;
+  }
+
+  .form__platform-title {
+    padding: 0;
+  }
+
+  .form__contact-details-wrapper {
+    margin: 0;
+    width: 940px;
+  }
+
+  .form__fieldset-contact-details {
+    width: 940px;
+  }
+
+  .form__contact-data-container {
+    display: flex;
+  }
+
+  .form__contact-details-input {
+    width: 371px;
+  }
+
+  .form__contact-data-wrapper:nth-child(2) {
+    margin-left: 70px;
+  }
+
+  .form__fieldset-achievement {
+    width: 940px;
+  }
+
+  .form__achievements-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 70px; /* Не забыть изменить на правильное значение после стилизации чекбоксов */
+  }
+
+  .form__emotions-wrapper {
+    width: 940px;
+    margin: 0;
+  }
+
+  .form__fieldset-emotions {
+    width: 940px;
+  }
+
+  .form__emotions-textarea {
+    width: 820px;
+    height: 128px;
+  }
+
+  .form__submit-wrapper {
+    width: 940px;
+    margin-left: 0;
+  }
+}

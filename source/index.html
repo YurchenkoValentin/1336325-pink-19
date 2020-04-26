@@ -12,9 +12,8 @@
           <div class="main-nav__wrapper">
             <a class="main-nav__logo" href="index.html">
               <picture>
-                <source srcset="img/logo-pink-white-mobile.svg" type="image/svg+xml" media="(max-width: 659px)">
-                <source srcset="img/logo-pink-white-tablet.svg" type="image/svg+xml" media="(max-width: 959px)">
                 <source srcset="img/logo-pink-white-desktop.svg" type="image/svg+xml" media="(min-width: 960px)">
+                <source srcset="img/logo-pink-white-tablet.svg" type="image/svg+xml" media="(min-width: 660px)">
                 <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения" width="75" height="23">
               </picture>
             </a>
@@ -111,8 +110,10 @@
             <p class="advantage-list__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantage__app-screen-mobile" src="img/iphone-screen-mobile@1x.png" alt="Пример работы нашего приложения">
-        <img class="advantage__app-screen-tablet" src="img/iphone-screen-3-tablet@1x.png" alt="Пример работы нашего приложения">
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+          <img class="advantage__app-screen" src="img/iphone-screen-mobile@1x.png 1x" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Пример работы нашего приложения">
+        </picture>
         <div class="advantage__research-container">
         <div class="advantage__research-wrapper-container">
           <span class="advantage__research-time">24</span>

@@ -1,8 +1,28 @@
 @import "mixin.less";
 @import "variable.less";
 
+.photo-main__text-wrapper {
+  color: white;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top center;
+  background-size: cover;
+  min-width: 320px;
+  height: 172px;
+  padding-top: 35px;
+  margin-bottom: 0;
+  background-position-y: -60px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
 .photo-main__text {
-  .main-header;
+  width: 170px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photo-main__text-slogan {
@@ -74,6 +94,10 @@
     background-size: cover;
     background-position: top center;
     height: 330px;
+
+   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+   }
   }
 
   .photo-main__text {
@@ -123,6 +147,10 @@
     background-size: cover;
     height: 395px;
     margin-top: -112px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+     }
   }
 
   .photo-main__text {

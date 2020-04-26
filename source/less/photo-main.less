@@ -5,23 +5,158 @@
   .main-header;
 }
 
+.photo-main__text-slogan {
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  width: 253px;
+  margin: 50px auto 49px auto;
+  color: #283645;
+}
+
+.photo-main__app-interface {
+  background-color: #f2f2f2;
+}
+
+.photo-main__app-interface-picture {
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-main__app-interface-wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.photo-main__app-interface-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 204px;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.photo-main__buttons-wrapper {
+  padding-bottom: 41px;
+}
+
+.photo-main__button-post,
+.photo-main__button-cancel {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(40, 54, 69, 0.1);
+  font-size: 18px;
+  line-height: 18px;
+  border: 2px solid rgba(40, 54, 69, 0.1);
+  border-radius: 25px;
+  background-color: inherit;
+}
+
+.photo-main__button-post {
+  margin-bottom: 10px;
+  margin-top: 37px;
+}
+
+
 @media (min-width: @tablet-width) {
-  .photo-main__text {
-    display: inline-block;
-    width: 660px;
+  .photo-main__text-wrapper {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
     height: 330px;
+  }
+
+  .photo-main__text {
+    width: 660px;
+    margin-left: auto;
     font-size: 50px;
     font-weight: 300;
     padding-top: 80px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top center;
-    background-position-y: -60px;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .photo-main__text-slogan {
+    width: 421px;
+    font-size: 18px;
+  }
+
+  .photo-main__app-interface {
+    display: flex;
+    padding-bottom: 54px;
+  }
+
+  .photo-main__app-interface-list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .photo-main__app-interface-item {
+    position: relative;
+  }
+
+  .photo-main__app-interface-item::after {
+    display: block;
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid black;
+    width: 203px;
+    left: 100px;
+    bottom: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo-main__text {
-    width: 1200px;
+  .photo-main__text-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    height: 395px;
+    margin-top: -112px;
+  }
+
+  .photo-main__text {
+    display: block;
+    background-image: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 185px;
+    width: 348px;
+  }
+
+  .photo-main__app-interface {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 57px;
+  }
+
+  .photo-main__app-interface-picture {
+    margin-left: 82px;
+    margin-right: 0;
+  }
+
+  .photo-main__app-interface-wrapper {
+    margin-left: 90px;
+    margin-right: 0;
+  }
+
+  .photo-main__buttons-wrapper {
+    display: flex;
+    margin-top: 145px;
+  }
+
+  .photo-main__button-post {
+    margin: 0;
   }
 }

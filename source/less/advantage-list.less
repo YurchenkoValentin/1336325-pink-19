@@ -8,7 +8,8 @@
 
 .advantage-list__item {
   width: 265px;
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -23,12 +24,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantage-list {
-    padding-left: 290px;
-  }
-
   .advantage-list__item {
     text-align: start;
+    margin-left: 44.5%;
+
     &:first-child {
       width: 294px;
     }
@@ -50,10 +49,12 @@
     display: flex;
     width: 885px;
     justify-content: space-between;
-    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .advantage-list__item {
     text-align: center;
+    margin-left: 0;
   }
 }

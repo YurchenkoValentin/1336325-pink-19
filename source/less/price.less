@@ -2,17 +2,22 @@
 
 .price {
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .price__table-standart {
   width: 280px;
-  margin-left: auto;
+  margin-left: -268px;
   margin-right: auto;
+  table-layout: fixed;
 }
 
 .price__name {
-  height: 98px;
+  width: 277px;
+  min-height: 98px;
   background-color: #283645;
+  padding-top: 25px;
+  padding-bottom: 23px;
 }
 
 .price__plan {
@@ -20,17 +25,116 @@
   font-weight: bold;
   line-height: 30px;
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 .price__value {
+  margin-top: 13px;
   color: white;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
 }
 
-.price__option {
-  height: 59px;
+.price__option-wrapper {
+  display: flex;
+}
+
+.price__option--tablet,
+.price__option--mobile{
   background-color: white;
   padding-left: 22px;
+  padding-right: 19px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.price__option-text--mobile {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.price__option-svg-yes {
+  width: 32px;
+  height: 23px;
+  fill: #3dc644;
+  margin-left: auto;
+}
+
+.price__option-svg-no {
+  width: 27px;
+  height: 27px;
+  fill: #f25b26;
+  margin-left: auto;
+}
+
+.price__option--tablet {
+  visibility: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .price__table-standart {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price__name--tablet,
+  .price__name {
+    width: 155px;
+  }
+
+  .price__plan {
+    font-size: 16px;
+  }
+
+  .price__value {
+    font-size: 18px;
+  }
+
+  .price__option--tablet {
+    color: #283645;
+  }
+
+  .price__option-text--mobile {
+    display: none;
+  }
+
+  .price__option--tablet {
+    visibility: unset;
+    width: 155px;
+  }
+
+  .price__option-svg-yes,
+  .price__option-svg-no {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__table-standart {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price__name--tablet,
+  .price__name {
+    width: 235px;
+    box-sizing: border-box;
+  }
+
+  .price__plan {
+    font-size: 18px;
+  }
+
+  .price__value {
+    font-size: 24px;
+  }
+
+  .price__option--tablet {
+    font-size: 18px;
+  }
 }

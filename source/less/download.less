@@ -18,9 +18,22 @@
 }
 
 .download__link-wrapper {
-  width: 251px;
+  width: 278px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.download__link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  border: 3px solid @text-color;
+  border-radius: 50px;
+  margin-top: 28px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 17px;
 }
 
 .download__title {
@@ -40,27 +53,23 @@
   margin-top: 6px;
 }
 
-.download__link {
-  display: inline-block;
-  font-size: 18px;
-  border: 2px solid @text-color;
-  border-radius: 50px;
-  padding: 10px 30px;
-  margin-top: 28px;
-}
-
 .download__list {
+  width: 210px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   padding: 0;
   margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .download__text {
   color: @text-color;
   width: 240px;
+  line-height: 24px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;

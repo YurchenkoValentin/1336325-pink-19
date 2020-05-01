@@ -1,0 +1,42 @@
+@import "variable.less";
+
+.slider__toggle {
+  display: flex;
+  background-color: #283645;
+  opacity: 0.3;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 10px;
+  box-sizing: border-box;
+
+  &:hover {
+    box-sizing: content-box;
+    background-color: white;
+    border: solid 3px #283645;
+    opacity: 1;
+    margin-top: -2px;
+    cursor: pointer;
+  }
+
+  &:nth-child(1) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  &:nth-child(2) {
+    margin-left: 0;
+  }
+
+  &:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggles {
+    display: none;
+  }
+}

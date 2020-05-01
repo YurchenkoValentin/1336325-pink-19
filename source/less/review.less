@@ -8,6 +8,7 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 45px;
 }
 
 .review__list {
@@ -43,9 +44,14 @@
 }
 
 .review__toggles {
+  display: flex;
+  justify-content: start;
+  width: 65px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 47px;
 }
 
 @media (min-width: @tablet-width) {
@@ -72,7 +78,50 @@
   }
 
   .review__text {
+    font-size: 18px;
+    line-height: 30px;
     order: 1;
     width: 617px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review::before {
+    position: absolute;
+    content: '';
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 67px;
+    top: 1972px;
+    left: 450px;
+  }
+
+  .review__text {
+    margin-top: 140px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 41px;
+      left: 10px;
+      top: 2119px;
+      opacity: 0.3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 41px;
+      right: 10px;
+      top: 2119px;
+      opacity: 0.3;
+    }
   }
 }

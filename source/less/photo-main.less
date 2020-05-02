@@ -52,6 +52,11 @@
   text-align: center;
 }
 
+.photo-main__app-interface-container {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .photo-main__app-interface-list {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +66,42 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+}
+
+.photo-main__slider-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-main__slider {
+  -webkit-appearance: none;
+  width: 240px;
+  height: 2px;
+  background: black;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.photo-main__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #f2f2f2;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background: #d22856;
+  }
+
+  &:active {
+    background: #d22856;
+  }
 }
 
 .photo-main__buttons-wrapper {
@@ -75,15 +116,44 @@
   margin-right: auto;
   color: rgba(40, 54, 69, 0.1);
   font-size: 18px;
+  font-weight: bold;
   line-height: 18px;
-  border: 2px solid rgba(40, 54, 69, 0.1);
-  border-radius: 25px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50px;
   background-color: inherit;
+  padding: 20px 91px 20px 91px;
+  cursor: pointer;
 }
 
 .photo-main__button-post {
+  color: #d22856;
+  border-color: #d22856;
   margin-bottom: 10px;
   margin-top: 37px;
+
+  &:hover {
+    background-color: #d22856;
+    color: white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.photo-main__button-cancel {
+  padding: 20px 104px 20px 105px;
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .photo-main__app-interface-button {
@@ -147,16 +217,6 @@
 
   .photo-main__app-interface-item {
     position: relative;
-  }
-
-  .photo-main__app-interface-item::after {
-    display: block;
-    position: absolute;
-    content: "";
-    border-bottom: 2px solid black;
-    width: 203px;
-    left: 100px;
-    bottom: 20px;
   }
 
   .photo-main__app-interface-button {

@@ -68,17 +68,108 @@
 .form__achievement-checkbox,
 .form__platform-radio {
   display: flex;
-  height: 39px;
-  box-sizing: border-box;
-  margin-bottom: 43px;
+}
+
+.form__platform-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.form__platform-radio-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 37px;
+    height: 36px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin-right: 31px;
+  }
+
+  &::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #d22856;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 33px;
+    opacity: 0;
+  }
+}
+
+.form__platform-radio:checked + .form__platform-radio-label::before {
+  background-color: white;
+}
+
+.form__platform-radio:checked + .form__platform-radio-label::after {
+  opacity: 1;
 }
 
 .form__achievment-checkbox-label,
 .form__platform-radio-label {
-  margin-left: 32px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+.form__achievment-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+}
+
+.form__achievment-checkbox-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+  outline: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin-right: 31px;
+  }
+
+  &::after {
+    content: "";
+    background-color: #d22856;
+    mask-image: url("../img/icon-yes.svg");
+    -webkit-mask-image: url("../img/icon-yes.svg");
+    mask-size: cover;
+    width: 22px;
+    height: 16px;
+    position: absolute;
+    z-index: 2;
+    left: 30px;
+    opacity: 0;
+  }
+}
+
+.form__achievment-checkbox:checked + .form__achievment-checkbox-label::after {
+  opacity: 1;
 }
 
 .form__emotions-wrapper {
@@ -142,12 +233,16 @@
   color: #d4345f;
 }
 
-.form__fieldset-achievement {
+.form__fieldset-achievement,
+.form__fieldset-platfrom {
   border: none;
 }
 
-.form__fieldset-contact-details {
+.form__fieldset-contact-details,
+.form__fieldset-emotions {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form__contact-details-title {
@@ -165,6 +260,10 @@
     flex-direction: column;
     width: 622px;
     order: 1;
+  }
+
+  .form__platform-radio-wrapper {
+    margin-left: 45px;
   }
 
   .form__data-wrapper {
@@ -197,6 +296,7 @@
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    border: 2px solid #e5e5e5;
   }
 
   .form__fieldset-contact-details {
@@ -214,6 +314,10 @@
     margin-top: 0;
   }
 
+  .form__platform-radio-label::after {
+    left: 91px;
+  }
+
   .form__contact-details-wrapper {
     width: 660px;
     display: flex;
@@ -227,6 +331,7 @@
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
+    display: inline;
   }
 
   .form__contact-data-wrapper {
@@ -253,6 +358,14 @@
     background-color: #ffffff;
   }
 
+  .form__achievement-checkbox-wrapper {
+    margin: 0;
+  }
+
+  .form__achievment-checkbox-label::after {
+    left: 91px;
+  }
+
   .form__achievement-title {
     width: 436px;
   }
@@ -262,6 +375,8 @@
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+    padding: 0 0 0 60px;
   }
 
   .form__emotions-wrapper {
@@ -281,6 +396,7 @@
     box-sizing: border-box;
     padding-left: 60px;
     padding-bottom: 40px;
+    border: 2px solid #e5e5e5;
   }
 
   .form__emotions-textarea {
@@ -319,6 +435,7 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
+    box-sizing: border-box;
   }
 
   .form__name-info-wrapper {
@@ -333,8 +450,16 @@
     width: 435px;
   }
 
+  .form__fieldset-platfrom {
+    padding-top: 37px;
+  }
+
   .form__platform-title {
     padding: 0;
+  }
+
+  .form__platform-radio-label::after {
+    left: 586px;
   }
 
   .form__contact-details-wrapper {
@@ -344,6 +469,52 @@
 
   .form__fieldset-contact-details {
     width: 940px;
+  }
+
+  .form__contact-data-wrapper:nth-child(1) .form__contact-details-label::before {
+    content:"";
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    top: 975px;
+    left: 379px;
+    position: absolute;
+  }
+
+  .form__contact-data-wrapper:nth-child(1) .form__contact-details-label::after {
+    content:"";
+    mask-image: url("../img/icon-phone.svg");
+    -webkit-mask-image: url("../img/icon-phone.svg");
+    background-color: #d22856;
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    z-index: 2;
+    top: 995px;
+    left: 400px;
+  }
+
+  .form__contact-data-wrapper:nth-child(2) .form__contact-details-label::before {
+    content:"";
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    top: 975px;
+    left: 820px;
+    position: absolute;
+  }
+
+  .form__contact-data-wrapper:nth-child(2) .form__contact-details-label::after {
+    content:"";
+    mask-image: url("../img/icon-mail.svg");
+    -webkit-mask-image: url("../img/icon-mail.svg");
+    background-color: #d22856;
+    position: absolute;
+    width: 18px;
+    height: 13px;
+    z-index: 2;
+    top: 998px;
+    left: 840px;
   }
 
   .form__contact-data-container {
@@ -366,7 +537,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 70px; /* Не забыть изменить на правильное значение после стилизации чекбоксов */
+  }
+
+  .form__achievment-checkbox-label::after {
+    left: 81px;
   }
 
   .form__emotions-wrapper {

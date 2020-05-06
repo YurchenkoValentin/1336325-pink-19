@@ -36,11 +36,11 @@
 
 .photo-main__app-interface {
   background-color: #f2f2f2;
+  padding-top: 10px;
 }
 
 .photo-main__app-interface-picture {
   display: block;
-  padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,6 +83,11 @@
   &:focus {
     outline: none;
   }
+}
+
+.photo-main__slider:nth-of-type(1),
+.photo-main__slider:nth-of-type(2) {
+  display: none;
 }
 
 .photo-main__slider::-webkit-slider-thumb {
@@ -202,21 +207,76 @@
   .photo-main__text-slogan {
     width: 421px;
     font-size: 18px;
+    margin-top: 66px;
+    margin-bottom: 64px;
   }
 
   .photo-main__app-interface {
     display: flex;
-    padding-bottom: 54px;
+    padding-top: 57px;
+    padding-bottom: 5px;
+  }
+
+  .photo-main__app-interface-container {
+    display: flex;
+    border: none;
+  }
+
+  .photo-main__app-interface-picture {
+    height: 400px;
   }
 
   .photo-main__app-interface-list {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0;
+    margin-top: 0;
+    width: fit-content;
   }
 
   .photo-main__app-interface-item {
     position: relative;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .photo-main__app-interface-item:not(:first-child) {
+    margin-top: 22px;
+  }
+
+  .photo-main__slider-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-main__slider {
+    margin-top: 47px;
+    margin-left: 15px;
+    width: 202px;
+  }
+
+  .photo-main__slider:nth-of-type(1) {
+    display: inline-block;
+    -webkit-appearance: none;
+    height: 2px;
+    background: black;
+    margin-top: 23px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .photo-main__slider:nth-of-type(2) {
+    display: inline-block;
+    -webkit-appearance: none;
+    height: 2px;
+    background: black;
+    margin-top: 45px;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .photo-main__app-interface-button {
@@ -236,6 +296,33 @@
       fill: #d22856;
       opacity: 1;
     }
+  }
+
+  .photo-main__app-interface-icon-first,
+  .photo-main__app-interface-icon-second {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-main__app-interface-icon-last {
+    width: 16px;
+    height: 16px;
+  }
+
+  .photo-main__button-post {
+    width: 260px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-bottom: 18px;
+    margin-top: 23px;
+    margin-bottom: 24px;
+  }
+
+  .photo-main__button-cancel {
+    width: 260px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-bottom: 18px;
   }
 }
 
@@ -264,7 +351,7 @@
     width: 940px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 57px;
+    padding-bottom: 15px;
   }
 
   .photo-main__app-interface-picture {
@@ -279,11 +366,21 @@
 
   .photo-main__buttons-wrapper {
     display: flex;
-    margin-top: 145px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 420px;
   }
 
   .photo-main__button-post {
+    width: fit-content;
     margin: 0;
+    padding: 15px 40px 16px 45px;
+  }
+
+  .photo-main__button-cancel {
+    width: fit-content;
+    padding: 15px 54px 16px 58px;
+    margin-left: 44px;
   }
 
   .photo-main__app-interface-button {
@@ -303,5 +400,25 @@
       fill: #d22856;
       opacity: 1;
     }
+  }
+
+  .photo-main__app-interface-icon-first {
+    width: 44px;
+    height: 44px;
+  }
+
+  .photo-main__app-interface-icon-second {
+    width: 48px;
+    height: 43px;
+  }
+
+  .photo-main__app-interface-icon-last {
+    width: 32px;
+    height: 32px;
+  }
+
+  .photo-main__slider {
+    width: 288px;
+    margin-left: 45px;
   }
 }

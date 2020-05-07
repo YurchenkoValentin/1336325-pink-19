@@ -86,19 +86,10 @@
 }
 
 @media (min-width: @desktop-width) {
-  .review::before {
-    position: absolute;
-    content: '';
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    width: 77px;
-    height: 67px;
-    top: 1972px;
-    left: 450px;
-  }
-
-  .review__text {
-    margin-top: 140px;
+  .review {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 
     &::before {
       content: "";
@@ -107,8 +98,7 @@
       background-repeat: no-repeat;
       width: 21px;
       height: 41px;
-      left: 10px;
-      top: 2119px;
+      margin-top: 165px;
       opacity: 0.3;
     }
 
@@ -119,9 +109,23 @@
       background-repeat: no-repeat;
       width: 21px;
       height: 41px;
-      right: 10px;
-      top: 2119px;
+      margin-left: 940px;
+      margin-top: -157px;
       opacity: 0.3;
     }
+  }
+
+  .review__list::before {
+    position: absolute;
+    content: '';
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    width: 77px;
+    height: 67px;
+    margin-left: -40px;
+  }
+
+  .review__text {
+    margin-top: 140px;
   }
 }

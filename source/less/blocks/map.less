@@ -1,0 +1,34 @@
+@import "../variable.less";
+
+.map__polygon {
+  top: 38px;
+  position: relative;
+  width: 100%;
+  height: 38px;
+}
+
+.map__source {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .map__polygon {
+    top: 72px;
+    height: 70px;
+  }
+
+  .map__source {
+    height: 374px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__source {
+    height: 500px;
+  }
+
+  .map__polygon {
+    top: 102px;
+    height: 100px;
+  }
+}

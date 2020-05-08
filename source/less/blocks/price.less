@@ -1,0 +1,173 @@
+@import "../variable.less";
+
+.price {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.price__table-standart {
+  width: 280px;
+  margin-left: -268px;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+.price__name {
+  width: 277px;
+  min-height: 98px;
+  background-color: #283645;
+  padding-top: 25px;
+  padding-bottom: 23px;
+
+  &:nth-child(3) {
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.price__text-hit {
+  font-size: 10px;
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  position: relative;
+  transform: rotate(-45deg);
+  right: 115px;
+  bottom: 65px;
+}
+
+.price__plan {
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.price__value {
+  margin-top: 13px;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price__option-wrapper {
+  display: flex;
+}
+
+.price__option--tablet,
+.price__option--mobile{
+  background-color: white;
+  padding-left: 22px;
+  padding-right: 19px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.price__option-text--mobile {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.price__option-svg-yes {
+  width: 32px;
+  height: 23px;
+  fill: #3dc644;
+  margin-left: auto;
+}
+
+.price__option-svg-no {
+  width: 27px;
+  height: 27px;
+  fill: #f25b26;
+  margin-left: auto;
+}
+
+.price__option--tablet {
+  visibility: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .price__table-standart {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price__name--tablet,
+  .price__name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 155px;
+  }
+
+  .price__name:nth-child(3) {
+      background-image: url("../../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+  }
+
+  .price__text-hit {
+    font-weight: 700;
+    right: 58px;
+    bottom: 58px;
+  }
+
+  .price__plan {
+    font-size: 16px;
+  }
+
+  .price__value {
+    font-size: 18px;
+  }
+
+  .price__option--tablet {
+    color: #283645;
+  }
+
+  .price__option-text--mobile {
+    display: none;
+  }
+
+  .price__option--tablet {
+    visibility: unset;
+    width: 155px;
+  }
+
+  .price__option-svg-yes,
+  .price__option-svg-no {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price__table-standart {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .price__name--tablet,
+  .price__name {
+    width: 235px;
+    box-sizing: border-box;
+  }
+
+  .price__text-hit {
+    right: 96px;
+  }
+
+  .price__plan {
+    font-size: 18px;
+  }
+
+  .price__value {
+    font-size: 24px;
+  }
+
+  .price__option--tablet {
+    font-size: 18px;
+  }
+}

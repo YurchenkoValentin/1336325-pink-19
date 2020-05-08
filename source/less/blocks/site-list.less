@@ -1,4 +1,4 @@
-@import "variable.less";
+@import "../variable.less";
 
 .site-list__item {
   display: flex;
@@ -10,9 +10,12 @@
   background-color: @main-color;
   text-align: center;
   font-weight: bold;
-  border-top: 1px solid black;
   border-bottom: 1px solid black;
   border-collapse: collapse;
+
+  &:nth-child(1) {
+    border-top: 1px solid black;
+  }
 }
 
 .site-list__link {
@@ -28,4 +31,10 @@
     height: 110px;
     background-color: inherit;
   }
+  .site-list__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
 }

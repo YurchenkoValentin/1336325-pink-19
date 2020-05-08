@@ -1,4 +1,4 @@
-@import "variable.less";
+@import "../variable.less";
 
 .main-nav__close-icon {
   background-color: inherit;
@@ -10,6 +10,7 @@
   padding-top: 22px;
   width: 75px;
   height: 23px;
+  fill: black;
 }
 
 .main-nav__wrapper {
@@ -117,6 +118,10 @@
 
 
 @media (min-width: @desktop-width) {
+  .main-nav__list {
+    min-width: 960px;
+  }
+
   .main-nav {
     position: relative;
     display: flex;

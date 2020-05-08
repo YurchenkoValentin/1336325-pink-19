@@ -1,4 +1,4 @@
-@import "variable.less";
+@import "../variable.less";
 
 .advantage {
   position: relative;
@@ -12,13 +12,14 @@
     height: 200%;
     top: -50%;
     z-index: -1;
-    background-image: url("../img/bg-triangle-white.svg");
+    background-image: url("../../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
   }
 }
 
 .advantage__title-question,
 .advantage__title-offer {
+  font-weight: 300;
   color: #283645;
   font-size: 24px;
   text-align: center;
@@ -32,17 +33,17 @@
   margin-top: 38px;
 }
 
-.advantage__app-screen-mobile {
+.advantage__app-screen {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.advantage__app-screen-tablet {
+.advantage__research-container {
   display: none;
 }
 
-.advantage__research-container {
+.advantage__app-desktop-wrapper {
   display: none;
 }
 
@@ -68,14 +69,12 @@
     margin-right: auto;
   }
 
-  .advantage__app-screen-tablet {
+  .advantage__app-screen {
     display: inline-block;
+    width: 267px;
+    height: 485px;
     margin-left: 20px;
-    margin-top: -385px;
-  }
-
-  .advantage__app-screen-mobile {
-    display: none;
+    margin-top: -440px;
   }
 
   .advantage__research-container {
@@ -88,9 +87,10 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-image: url("../img/icon-timer.svg");
+    background-image: url("../../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 20px 60px;
+    background-size: 245px 275px;
   }
 
   .advantage__research-wrapper {
@@ -103,6 +103,7 @@
   }
 
   .advantage__research-title {
+    width: 170px;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -110,6 +111,7 @@
   }
 
   .advantage__research-text {
+    width: 300px;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
@@ -121,15 +123,19 @@
 
   .advantage__research-time {
     position: absolute;
-    left: 33px;
-    top: 81px;
+    left: 39px;
+    top: 114px;
     color: #d22856;
-    padding: 23px 46px 28px 46px;
+    padding: 12px 35px 17px 35px;
     font-size: 96px;
     font-weight: bold;
     line-height: 145.5px;
     border: 15px solid #d22856;
     border-radius: 50%;
+  }
+
+  .advantage__app-desktop-wrapper {
+    display: none;
   }
 }
 
@@ -143,7 +149,16 @@
     margin-right: auto;
   }
 
-  .advantage__app-screen-tablet {
+  .advantage__app-desktop-wrapper {
+    width: 885px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .advantage__app-screen {
     display: none;
   }
 
@@ -151,15 +166,27 @@
     background-color: inherit;
   }
 
+  .advantage__research-wrapper-container {
+    width: 890px;
+    background-position: 90px 60px;
+    background-size: 245px 275px;
+  }
+
+  .advantage__research-time {
+    left: 109px;
+  }
+
   .advantage__research-wrapper {
     width: 440px;
   }
 
   .advantage__research-title {
+    min-width: 300px;
     line-height: 30px;
   }
 
   .advantage__research-text {
+    width: 520px;
     font-size: 18px;
     line-height: 30px;
   }

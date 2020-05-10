@@ -5,12 +5,29 @@
   border: none;
 }
 
-.main-nav__logo-img {
-  display: block;
-  padding-top: 22px;
-  width: 75px;
-  height: 23px;
-  fill: black;
+.main-nav__logo {
+  padding-top: 20px;
+}
+
+.main-nav__logo-svg--mobile {
+  fill: white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-svg--tablet {
+  display: none;
+}
+
+.main-nav__logo-svg--desktop {
+  display: none;
 }
 
 .main-nav__wrapper {

@@ -21,6 +21,19 @@
 .site-list__link {
   color: @text-color;
   text-decoration: none;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: white;
+    opacity: 0.3;
+  }
+}
+
+.site-list__link.active {
+  margin-top: 9px;
 }
 
 @media (min-width: @desktop-width) {

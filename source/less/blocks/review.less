@@ -90,28 +90,34 @@
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon-review-arrow-left.svg");
-      background-repeat: no-repeat;
-      width: 21px;
-      height: 41px;
-      margin-top: 165px;
-      opacity: 0.3;
+  .review__svg-arrow-left {
+    display: block;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 160px;
+  }
+
+  .review__svg-arrow-right {
+    display: block;
+    position: absolute;
+    margin-left: 769px;
+    margin-top: -160px;
+  }
+
+  .review__svg-arrow-left,
+  .review__svg-arrow-right {
+    fill: #283645;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../../img/icon-review-arrow-right.svg");
-      background-repeat: no-repeat;
-      width: 21px;
-      height: 41px;
-      margin-left: 938px;
-      margin-top: -157px;
-      opacity: 0.3;
+    &:active {
+      opacity: 0.1;
     }
   }
 

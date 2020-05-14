@@ -1,20 +1,5 @@
 @import "../variable.less";
 
-.main-nav__toggle {
-  background-image: url("../../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.main-nav__toggle.active {
-  background-image: url("../../img/icon-menu-cross.svg");
-}
-
-/* .main-nav__close-icon {
-  fill: white;
-  border: none;
-} */
-
 .main-nav__logo {
   padding-top: 22px;
   fill: white;
@@ -37,6 +22,17 @@
   display: none;
 }
 
+.main-nav.active .main-nav__burger-icon {
+  display: block;
+}
+
+.main-nav__burger-icon {
+  display: none;
+}
+
+.main-nav.active .main-nav__close-icon {
+  display: none;
+}
 
 .main-nav__wrapper {
   display: flex;
@@ -44,6 +40,10 @@
   position: relative;
   min-height: 70px;
   padding: 0 19px 0 20px;
+}
+
+.main-nav.active .main-nav__list{
+  display: none;
 }
 
 .main-nav__list {

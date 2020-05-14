@@ -1,9 +1,19 @@
 @import "../variable.less";
 
-.main-nav__close-icon {
-  background-color: inherit;
-  border: none;
+.main-nav__toggle {
+  background-image: url("../../img/icon-menu-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.main-nav__toggle.active {
+  background-image: url("../../img/icon-menu-cross.svg");
+}
+
+/* .main-nav__close-icon {
+  fill: white;
+  border: none;
+} */
 
 .main-nav__logo {
   padding-top: 22px;
@@ -127,7 +137,7 @@
     height: 110px;
   }
 
-  .main-nav__close-icon {
+  .main-nav__close-button {
     left: 610px;
     top: 45px;
   }

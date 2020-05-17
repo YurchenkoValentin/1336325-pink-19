@@ -24,14 +24,39 @@
 
 .main-nav.active .main-nav__burger-icon {
   display: block;
+  fill: white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__burger-icon {
   display: none;
 }
 
+.main-nav__close-icon {
+  fill: white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav.active .main-nav__close-icon {
   display: none;
+}
+
+.active .main-nav__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__wrapper {
@@ -39,7 +64,7 @@
   justify-content: space-between;
   position: relative;
   min-height: 70px;
-  padding: 0 19px 0 20px;
+  padding: 0 11px 0 20px;
 }
 
 .main-nav.active .main-nav__list{

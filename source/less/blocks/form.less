@@ -41,6 +41,14 @@
   }
 }
 
+.form__name-info-input:hover {
+  border-color: #283645;
+}
+
+.form__name-info-input:active {
+  border-color: #d22856;
+}
+
 .form__achievement-checkbox-container,
 .form__platform-info-container {
   background-color: #f2f2f2;
@@ -93,7 +101,6 @@
     border-radius: 50%;
     left: 0;
     top: 0;
-    z-index: 1;
     margin-right: 31px;
   }
 
@@ -104,10 +111,17 @@
     background-color: #d22856;
     border-radius: 50%;
     position: absolute;
-    z-index: 1;
     margin-left: 13px;
     opacity: 0;
   }
+}
+
+.form__platform-radio-label:hover::before {
+  border-color: #283645;
+}
+
+.form__platform-radio-label:active::before {
+  border-color: #d22856;
 }
 
 .form__platform-radio:checked + .form__platform-radio-label::before {
@@ -149,7 +163,6 @@
     background-color: #ffffff;
     left: 0;
     top: 0;
-    z-index: 1;
     margin-right: 31px;
   }
 
@@ -162,10 +175,17 @@
     width: 22px;
     height: 16px;
     position: absolute;
-    z-index: 2;
     margin-left: 10px;
     opacity: 0;
   }
+}
+
+.form__achievment-checkbox-label:hover::before {
+  border-color: #283645;
+}
+
+.form__achievment-checkbox-label:active::before {
+  border-color: #d22856;
 }
 
 .form__achievment-checkbox:checked + .form__achievment-checkbox-label::after {
@@ -216,6 +236,19 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    background-color: #e2e2e2;
+  }
+}
+
+.form__submit-text:active {
+  opacity: 0.3;
 }
 
 .form__text-required {
@@ -347,6 +380,7 @@
 
   .form__achievement-wrapper {
     display: flex;
+
     order: 4;
   }
 
@@ -507,12 +541,41 @@
 
   .form__fieldset-achievement {
     width: 940px;
+    padding: 0;
   }
 
-  .form__achievements-wrapper {
+  .form__achievments-wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  .form__achievement-checkbox-wrapper {
+    margin-left: 32px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
   }
 
   .form__emotions-wrapper {

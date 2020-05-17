@@ -3,18 +3,6 @@
 .advantage {
   position: relative;
   overflow: hidden;
-  background-color: #f2f2f2;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    z-index: -1;
-    background-image: url("../../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 .advantage__title-question,
@@ -22,21 +10,37 @@
   font-weight: 300;
   color: #283645;
   font-size: 24px;
+  line-height: 32px;
   text-align: center;
-  margin-top: 46px;
+  margin-top: 37px;
   width: 210px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .advantage__title-offer {
-  margin-top: 38px;
+  margin-top: 26px;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.advantage__title-svg {
+  fill: #f2f2f2;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  transform: rotate(-174deg);
+  margin-bottom: -41px;
+  z-index: -1;
 }
 
 .advantage__app-screen {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -45px;
 }
 
 .advantage__research-container {
@@ -67,6 +71,11 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .advantage__title-svg {
+    height: 140px;
+    margin-bottom: -65px;
   }
 
   .advantage__app-screen {
@@ -149,13 +158,22 @@
     margin-right: auto;
   }
 
+  .advantage__title-svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    height: 280px;
+    margin-bottom: -112px;
+  }
+
   .advantage__app-desktop-wrapper {
-    width: 885px;
+    width: 960px;
+    background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
   }
 
   .advantage__app-screen {

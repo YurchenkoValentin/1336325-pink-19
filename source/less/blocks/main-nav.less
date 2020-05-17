@@ -1,16 +1,62 @@
 @import "../variable.less";
 
-.main-nav__close-icon {
-  background-color: inherit;
-  border: none;
+.main-nav__logo {
+  padding-top: 22px;
+  fill: white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: white;
+    opacity: 0.3;
+  }
 }
 
-.main-nav__logo-img {
+.main-nav__logo--tablet {
+  display: none;
+}
+
+.main-nav__logo--desktop {
+  display: none;
+}
+
+.main-nav.active .main-nav__burger-icon {
   display: block;
-  padding-top: 22px;
-  width: 75px;
-  height: 23px;
-  fill: black;
+  fill: white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__burger-icon {
+  display: none;
+}
+
+.main-nav__close-icon {
+  fill: white;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav.active .main-nav__close-icon {
+  display: none;
+}
+
+.active .main-nav__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__wrapper {
@@ -18,7 +64,11 @@
   justify-content: space-between;
   position: relative;
   min-height: 70px;
-  padding: 0 19px 0 20px;
+  padding: 0 11px 0 20px;
+}
+
+.main-nav.active .main-nav__list{
+  display: none;
 }
 
 .main-nav__list {
@@ -95,6 +145,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__logo--mobile {
+    display: none;
+  }
+
+  .main-nav__logo--tablet {
+    display: inline-block;
+  }
+
   .main-nav__list {
     min-width: 660px;
   }
@@ -104,7 +162,7 @@
     height: 110px;
   }
 
-  .main-nav__close-icon {
+  .main-nav__close-button {
     left: 610px;
     top: 45px;
   }
@@ -114,10 +172,31 @@
     width: 147px;
     height: 40px;
   }
+
+  .main-nav__logo svg {
+    width: 147px;
+    height: 40px;
+  }
+
+  .main-nav__logo-svg--mobile {
+    display: none;
+  }
+
+  .main-nav__logo-svg--tablet {
+    display: inline-block;
+  }
 }
 
 
 @media (min-width: @desktop-width) {
+  .main-nav__logo--desktop {
+    display: inline-block;
+  }
+
+  .main-nav__logo--tablet {
+    display: none;
+  }
+
   .main-nav__list {
     min-width: 960px;
   }
@@ -156,5 +235,13 @@
 
   .main-nav__close-icon {
     display: none;
+  }
+
+  .main-nav__logo-svg--tablet {
+    display: none;
+  }
+
+  .main-nav__logo-svg--desktop {
+    display: inline-block;
   }
 }

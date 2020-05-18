@@ -3,21 +3,24 @@
 .price {
   background-color: #f2f2f2;
   overflow: hidden;
+  padding-top: 68px;
+  padding-bottom: 33px;
+  margin-top: 20px;
 }
 
 .price__table-standart {
   width: 280px;
-  margin-left: -268px;
+  margin-left: -264px;
   margin-right: auto;
   table-layout: fixed;
 }
 
-.price__name {
+.price__name:not(:nth-child(1)) {
   width: 277px;
   min-height: 98px;
   background-color: #283645;
-  padding-top: 25px;
-  padding-bottom: 23px;
+  padding-top: 16px;
+  padding-bottom: 4px;
 
   &:nth-child(3) {
     background-image: url("../../img/bg-hit.svg");
@@ -26,14 +29,14 @@
 }
 
 .price__text-hit {
-  font-size: 10px;
+  font-size: 13px;
   text-transform: uppercase;
   display: block;
   color: white;
   position: relative;
   transform: rotate(-45deg);
-  right: 115px;
-  bottom: 65px;
+  right: 116px;
+  bottom: 59px;
 }
 
 .price__plan {
@@ -59,10 +62,10 @@
 .price__option--tablet,
 .price__option--mobile{
   background-color: white;
-  padding-left: 22px;
-  padding-right: 19px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-left: 23px;
+  padding-right: 18px;
+  padding-top: 14px;
+  padding-bottom: 11px;
 }
 
 .price__option-text--mobile {
@@ -90,29 +93,91 @@
   visibility: hidden;
 }
 
+.price__toggles {
+  display: flex;
+  justify-content: start;
+  width: 100px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.price__toggles:nth-child(2) {
+  padding-top: 29px;
+  padding-left: 4px;
+}
+
+.price__toggles-slider {
+  display: flex;
+  background-color: #283645;
+  opacity: 0.3;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 10px;
+  box-sizing: border-box;
+  margin-left: 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.price__toggles-slider--active {
+  box-sizing: content-box;
+  background-color: white;
+  border: solid 3px #283645;
+  opacity: 1;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
 @media (min-width: @tablet-width) {
+  .price {
+    padding-top: 34px;
+    padding-bottom: 65px;
+    margin-top: 76px;
+  }
+
   .price__table-standart {
     width: 620px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .price__name--tablet,
-  .price__name {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 155px;
+  .price__name:not(:nth-child(1)) {
+  width: 155px;
+  min-height: 98px;
+  padding-top: 11px;
+  padding-bottom: 8px;
   }
 
   .price__name:nth-child(3) {
-      background-image: url("../../img/bg-hit-tablet.svg");
-      background-repeat: no-repeat;
+    background-image: url("../../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position-x: -11px;
+  }
+
+  .price__name--tablet {
+    width: 154px;
   }
 
   .price__text-hit {
+    position: absolute;
     font-weight: 700;
-    right: 58px;
-    bottom: 58px;
+    margin-top: -62px;
+    margin-left: 5px;
+    right: unset;
+    bottom: unset;
   }
 
   .price__plan {
@@ -123,26 +188,42 @@
     font-size: 18px;
   }
 
+  .price__option {
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 0px;
+  }
+
   .price__option--tablet {
     color: #283645;
+    visibility: unset;
+    width: 155px;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .price__option-text--mobile {
     display: none;
   }
 
-  .price__option--tablet {
-    visibility: unset;
-    width: 155px;
-  }
-
   .price__option-svg-yes,
   .price__option-svg-no {
     margin-right: auto;
   }
+
+  .price__toggles {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .price {
+    padding-top: 74px;
+    padding-bottom: 98px;
+  }
+
   .price__table-standart {
     width: 940px;
     margin-left: auto;
@@ -151,12 +232,36 @@
 
   .price__name--tablet,
   .price__name {
-    width: 235px;
+    width: 152px;
     box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 23px;
+  }
+  .price__name:not(:nth-child(1)) {
+    padding-top: 15px;
+    padding-bottom: 23px;
+
+    &:nth-child(3) {
+      background-position-x: 0;
+    }
+  }
+
+  .price__option--tablet {
+    padding-top: 13px;
+    padding-bottom: 19px;
+
+    &:nth-child(2) {
+      padding-top: 16px;
+    }
+
+    &:nth-child(3) {
+      padding-top: 17px;
+    }
   }
 
   .price__text-hit {
-    right: 96px;
+    margin-top: -58px;
+    margin-left: 10px;
   }
 
   .price__plan {

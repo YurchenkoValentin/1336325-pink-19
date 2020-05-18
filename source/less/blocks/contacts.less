@@ -4,6 +4,7 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 15px;
 }
 
 .contacts__text {
@@ -11,18 +12,20 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 24px;
+  line-height: 31px;
   font-weight: 300;
   color: #283645;
 }
 
 .contacts__list {
   padding: 0;
+  margin-top: 33px;
 
   .contacts__list-text {
     color: #283645;
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 0;
+    margin-top: 20px;
   }
 
   .contacts__list-number,
@@ -48,6 +51,10 @@
     font-weight: 300;
     font-size: 24px;
   }
+
+  .contacts__list-text {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -59,15 +66,32 @@
   .contacts__text {
     width: 380px;
     font-size: 40px;
+    margin-top: 31px;
+    line-height: 50px;
+    margin-bottom: 0;
   }
 
   .contacts__list {
+    margin-top: 20px;
     width: 580px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .contacts__list-item {
+    margin-left: 26px;
+  }
+
+  .contacts__list-item:nth-child(2) {
+    margin-left: 100px;
+    line-height: 31px;
+  }
+
+  .contacts__list-item:nth-child(3) {
+    margin-left: 180px;
+    margin-top: 20px;
   }
 }
 
@@ -76,19 +100,42 @@
     width: 960px;
   }
 
-  .contacts__list {
-    width: 900px;
+  .contacts__text {
+    min-width: 500px;
+    margin-top: 50px;
+    line-height: 59px;
+    font-size: 50px;
   }
 
-  .contacts__list:nth-child(1) {
+  .contacts__list {
+    width: 900px;
+    margin-top: 38px;
+  }
+
+  .contacts__list-item:nth-child(1) {
     order: 1;
+  }
 
-    &:nth-child(2) {
-      order: 3;
-    }
+  .contacts__list-item:nth-child(2) {
+    order: 3;
+    margin-left: 92px;
+    margin-top: -2px;
+  }
 
-    &:nth-child(3) {
-      order: 2;
-    }
+  .contacts__list-item:nth-child(3) {
+    order: 2;
+    margin-left: 109px;
+    margin-top: 0;
+  }
+
+  .contacts__list-number,
+  .contacts__list-address {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .contacts__list-email {
+    display: inline-block;
+    margin-top: 20px;
   }
 }

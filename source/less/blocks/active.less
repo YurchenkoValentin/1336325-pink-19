@@ -1,8 +1,15 @@
 @import "../variable.less";
 
-.active-icon {
+.photo-main__app-interface-item:first-child .active-icon {
   fill: #d22856;
   opacity: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-main__app-interface-item .active-icon {
+    fill: #d22856;
+    opacity: 1;
+  }
 }
 
 @media (min-width: @desktop-width) {

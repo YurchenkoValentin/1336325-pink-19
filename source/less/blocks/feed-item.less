@@ -25,7 +25,7 @@
 }
 
 .feed-item__wrapper,
-.feed-item__wrapper-wide {
+.feed-item-wide__wrapper {
   position: relative;
   background-color: #f2f2f2;
   width: 280px;
@@ -74,17 +74,17 @@
   color: #d22856;
 }
 
-.feed-item__author-wide {
+.feed-item-wide __author{
   display: inline-block;
 }
 
-.feed-item__last-time-wide {
+.feed-item-wide__last-time {
   font-size: 12px;
   font-weight: 300;
   color: #283645;
 }
 
-.feed-item__review-text-wide {
+.feed-item-wide__review-text {
   width: 251px;
   font-size: 14px;
   line-height: 24px;
@@ -93,7 +93,7 @@
   margin-bottom: 0;
 }
 
-.feed-item__likes-wrapper-wide {
+.feed-item-wide__likes-wrapper {
   display: flex;
   justify-content: space-between;
   width: 120px;
@@ -101,21 +101,21 @@
   text-transform: uppercase;
 }
 
-.feed-item__likes-wide {
+.feed-item-wide__likes {
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
 }
 
 .feed-item__img,
-.feed-item__img-wide-mobile {
+.feed-item-wide__img-mobile {
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
 
-.feed-item__img-wide-mobile {
+.feed-item-wide__img-mobile {
   width: 100%;
   display: flex;
   z-index: -1;
@@ -129,27 +129,31 @@
     margin-bottom: -90px;
   }
 
-  .feed-item__wrapper-wide {
-    width: 590px;
-    padding-left: 30px;
+  .feed-item-wide__wrapper {
+    width: 619px;
+    padding-left: 27px;
     padding-bottom: 25px;
-    padding-top: 30px;
+    padding-top: 24px;
   }
 
-  .feed-item__review-text-wide {
+  .feed-item-wide__img-mobile {
+    height: 509px;
+  }
+
+  .feed-item-wide__time-ago {
+    text-transform: uppercase;
+  }
+
+  .feed-item-wide__review-text{
     width: 519px;
   }
 
-  .feed-item__likes-wrapper-wide {
+  .feed-item-wide__likes-wrapper {
     position: absolute;
-    bottom: 70px;
-    right: 30px;
+    bottom: 73px;
+    right: 28px;
     display: flex;
     flex-direction: row-reverse;
-  }
-
-  .feed__item-likes-wide {
-    margin-left: 0;
   }
 
   .feed-item {
@@ -158,22 +162,33 @@
     margin-left: 20px;
   }
 
+  .feed-item__img {
+    margin-top: 19px;
+  }
+
   .feed-item__wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 300px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
+    padding-top: 26px;
+    padding-left: 26px;
   }
 
   .feed-item__review-text {
-    margin-top: 0;
+    margin-top: 4px;
+    margin-bottom: 12px;
   }
 
   .feed-item__likes-wrapper {
     margin-top: auto;
     width: 243px;
     justify-content: start;
+  }
+
+  .feed-item:nth-child(5) .feed-item__likes-wrapper {
+    margin-top: 24px;
   }
 
   .feed-item__heart {
@@ -189,17 +204,30 @@
 }
 
 @media (min-width: @desktop-width) {
+  .feed-item-wide__img-mobile {
+    height: 506px;
+  }
+
+  .feed-item-wide__svg {
+    position: absolute;
+    display: block;
+    left: 0;
+    margin-left: 810px;
+    margin-top: 53px;
+  }
+
   .feed-item-wide {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
   }
 
-  .feed-item__wrapper-wide {
+  .feed-item-wide__wrapper {
     width: 940px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding-bottom: 23px;
+    padding-left: 28px;
+    padding-top: 24px;
     left: 0;
     margin-left: auto;
     margin-right: auto;
@@ -209,29 +237,39 @@
     margin-left: 10px;
   }
 
+  .feed-item:nth-child(4) {
+    margin-left: 10px;
+    margin-top: 35px;
+  }
+
+  .feed-item:nth-child(4) .feed-item__likes-wrapper{
+    margin-top: 24px;
+  }
+
+  .feed-item:nth-child(5),
+  .feed-item:nth-child(6) {
+    margin-top: 35px;
+  }
+
   .feed-item__author {
     font-size: 14px;
   }
 
-  .feed-item__review-text-wide {
+  .feed-item-wide__review-text {
     width: 880px;
     font-size: 14px;
   }
 
-  .feed-item__likes-wrapper-wide {
+  .feed-item-wide__likes-wrapper {
     position: absolute;
-    bottom: 50px;
+    bottom: 47px;
+    right: 32px;
     display: flex;
+    justify-content: start;
     flex-direction: row-reverse;
   }
 
-  .feed-item__likes-wrapper-wide {
-    bottom: 55px;
-    right: 60px;
-    justify-content: start;
-  }
-
-  .feed-item__likes-wide {
+  .feed-item-wide__likes{
     margin-right: 17px;
   }
 }

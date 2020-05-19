@@ -82,10 +82,10 @@
         </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link active" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-              <a class="site-list__link" href="#">Фотографии</a>
+              <a class="site-list__link active" href="#">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурс</a>
@@ -116,15 +116,15 @@
           <source type="image/webp" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.webp 2x">
 
           <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="feed-item__img-wide-mobile" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="feed-item-wide__img-mobile" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
         </picture>
-        <div class="feed-item__wrapper-wide">
-          <b class="feed-item__author-wide">Анна</b><span class="feed-item__last-time"> (5 минут назад)</span>
-          <p class="feed-item__review-text-wide">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <div class="feed-item__likes-wrapper-wide">
-            <img class="feed-item__heart-wide" src="img/icon-heart.svg" alt="лайк">
-            <span class="feed-item__likes-wide">Нравится: 215</span>
+        <div class="feed-item-wide__wrapper">
+          <b class="feed-item-wide__author">Анна</b><span class="feed-item-wide__last-time"><span class="feed-item-wide__time-ago"> (5 минут назад)</span></span>
+          <p class="feed-item-wide__review-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="feed-item-wide__likes-wrapper">
+            <img class="feed-item-wide__heart" src="img/icon-heart.svg" alt="лайк">
+            <span class="feed-item-wide__likes">Нравится: 215</span>
           </div>
         </div>
       </div>
@@ -198,7 +198,7 @@
             </picture>
             <div class="feed-item__wrapper">
               <span class="feed-item__last-time"><b class="feed-item__author">Сергей</b><span class="feed-item__time-ago"> (25 часов назад)</span></span>
-              <p class="feed-item__review-text">Самая кубанская в мире</p>
+              <p class="feed-item__review-text">Самая кубанская в мире!</p>
               <div class="feed-item__likes-wrapper">
                 <img class="feed-item__heart" src="img/icon-heart.svg" alt="лайк">
                 <span class="feed-item__likes">Нравится: 4</span>
@@ -290,6 +290,7 @@
             </li>
           </ul>
           <div class="photo-main__slider-wrapper">
+            <input class="photo-main__slider-mobile" type="range" min="1" max="100" value="85" id="photo-range-mobile">
           </div>
         </div>
         <div class="photo-main__buttons-wrapper">
@@ -300,20 +301,20 @@
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--photo">
     <div class="footer__contacts contacts">
-      <p class="contacts__text">Остались вопросы? Свяжитесь с нами</p>
+      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
       <ul class="contacts__list">
-        <li class="contacnts__list-item">
+        <li class="contacts__list-item">
           <p class="contacts__list-text
           ">Звоните:</p>
           <a class="contacts__list-number" href="tel:+7812555-66-66">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacnts__list-item">
+        <li class="contacts__list-item">
           <p class="contacts__list-text">Пишите:</p>
           <a class="contacts__list-email" href="#">mail@htmlacademy.ru</a>
         </li>
-        <li class="contacnts__list-item">
+        <li class="contacts__list-item">
           <p class="contacts__list-text">Приезжайте в гости:</p>
           <a class="contacts__list-address" href="#">ул. Большая Конюшенная, 19/8</a>
         </li>
@@ -337,21 +338,21 @@
       <ul class="footer__container-social-list">
         <li class="footer__container-social-item">
           <a class="footer__container-social-link" href="#">
-            <svg class="footer__container-social-link--twitter">
+            <svg class="footer__container-social-svg footer__container-social-svg--twitter">
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>
         <li class="footer__container-social-item">
           <a class="footer__container-social-link footer__container-social-link--facebook" href="#">
-            <svg class="footer__container-social-link--facebook">
+            <svg class="footer__container-social-svg footer__container-social-svg--facebook">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="footer__container-social-item">
           <a class="footer__container-social-link footer__container-social-link--youtube" href="#">
-            <svg class="footer__container-social-link--youtube">
+            <svg class="footer__container-social-svg footer__container-social-svg--youtube">
               <use xlink:href="img/sprite.svg#youtube"></use>
             </svg>
           </a>

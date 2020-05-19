@@ -1,5 +1,9 @@
 @import "../variable.less";
 
+.feed-item-wide {
+  margin-top: 6px;
+}
+
 .feed-item-wide__svg {
   display: flex;
   width: 140px;
@@ -28,9 +32,9 @@
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  padding-top: 25px;
+  padding-top: 19px;
   padding-left: 17px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .feed-item__author {
@@ -42,6 +46,10 @@
   font-size: 12px;
   font-weight: 300;
   color: #283645;
+}
+
+.feed-item__time-ago {
+  text-transform: uppercase;
 }
 
 .feed-item__review-text {
@@ -60,6 +68,7 @@
 }
 
 .feed-item__likes {
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
@@ -76,17 +85,20 @@
 }
 
 .feed-item__review-text-wide {
-  width: 250px;
+  width: 251px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
   margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .feed-item__likes-wrapper-wide {
   display: flex;
   justify-content: space-between;
   width: 120px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .feed-item__likes-wide {
@@ -110,7 +122,7 @@
 }
 
 .feed-item__img {
-  margin-top: 20px;
+  margin-top: 21px;
 }
 @media (min-width: @tablet-width) {
   .feed-item-wide__svg {

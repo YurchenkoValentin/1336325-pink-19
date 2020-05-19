@@ -7,10 +7,11 @@
   background-position: top center;
   background-size: cover;
   min-width: 320px;
-  height: 172px;
-  padding-top: 35px;
+  padding-top: 24px;
+  padding-bottom: 79px;
   margin-bottom: 0;
   background-position-y: -60px;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
   }
@@ -23,20 +24,22 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .photo-main__text-slogan {
   line-height: 30px;
   font-size: 14px;
   text-align: center;
-  width: 253px;
-  margin: 50px auto 49px auto;
+  min-width: 254px;
+  margin: 42px auto 43px auto;
   color: #283645;
 }
 
 .photo-main__app-interface {
   background-color: #f2f2f2;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .photo-main__app-interface-picture {
@@ -55,13 +58,21 @@
 .photo-main__app-interface-container {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 47px;
+}
+
+.photo-main__app-interface-item:nth-child(2) {
+  margin-left: 31px;
+}
+
+.photo-main__app-interface-item:nth-child(3) {
+  margin-left: 36px;
 }
 
 .photo-main__app-interface-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 204px;
+  min-width: 225px;
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;

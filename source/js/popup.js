@@ -21,4 +21,3 @@ submit.onclick = function() {
 close.onclick = function() {
   popup.classList.toggle('active');
 };
-

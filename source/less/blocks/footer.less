@@ -1,3 +1,21 @@
 .footer {
   text-align: center;
 }
+
+.footer--social .map {
+  display: none;
+}
+
+.footer--social .contacts {
+  display: none;
+}
+
+.footer--social .footer__container--mobile {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .footer--social .footer__container--mobile {
+    display: flex;
+  }
+}

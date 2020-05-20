@@ -24,15 +24,15 @@
   margin-bottom: 15px;
 }
 
-.advantage__title-svg {
+.advantage__title-triangle {
+  display: block;
+  overflow: hidden;
   fill: #f2f2f2;
   position: relative;
   width: 100%;
   height: 70px;
-  -webkit-transform: scale(-1, -1);
-  transform: scale(-1, -1);
-  transform: rotate(-174deg);
-  margin-bottom: -41px;
+  transform: scale(-1, -1 rotate(-174deg));
+  margin-bottom: -33px;
   z-index: -1;
 }
 
@@ -52,38 +52,51 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantage__title-wrapper {
+    margin-top: 56px;
+  }
+
   .advantage__title-question {
     width: 608px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 45px;
     font-size: 40px;
     font-weight: 300;
   }
 
   .advantage__title-offer {
-    margin-top: -6px;
+    margin-top: 7px;
+    line-height: 49px;
     font-size: 40px;
     font-weight: 300;
     width: 345px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
   }
 
-  .advantage__title-svg {
-    height: 140px;
-    margin-bottom: -65px;
+  .advantage__title-triangle {
+    display: block;
+    overflow: hidden;
+    fill: #f2f2f2;
+    position: relative;
+    width: 100%;
+    height: 136px;
+    transform: scale(-1, -1) rotate(-173deg);
+    margin-bottom: -53px;
+    z-index: -1;
   }
 
   .advantage__app-screen {
     display: inline-block;
+    position: absolute;
     width: 267px;
-    height: 485px;
+    height: 483px;
     margin-left: 20px;
-    margin-top: -440px;
+    margin-top: -477px;
   }
 
   .advantage__research-container {
@@ -96,9 +109,9 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    background-image: url("../../img/icon-timer.svg");
+    background-image: url("../img/icon-timer.svg");
     background-repeat: no-repeat;
-    background-position: 20px 60px;
+    background-position: 15px 51px;
     background-size: 245px 275px;
   }
 
@@ -106,36 +119,42 @@
     width: 302px;
     word-spacing: 2px;
     height: 202px;
-    padding-top: 98px;
+    padding-top: 87px;
     padding-bottom: 83px;
     margin-left: 45.7%;
   }
 
   .advantage__research-title {
-    width: 170px;
+    width: 172px;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
     margin-top: 0;
+    margin-left: 28px;
   }
 
   .advantage__research-text {
-    width: 300px;
+    width: 310px;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
+    margin-left: 29px;
+    margin-top: -18px;
+    word-spacing: 1px;
   }
 
   .advantage__research-link {
     color: #d22856;
+    margin-left: 26px;
+    text-decoration: underline;
   }
 
   .advantage__research-time {
     position: absolute;
-    left: 39px;
-    top: 114px;
+    left: 35px;
+    top: 107px;
     color: #d22856;
-    padding: 12px 35px 17px 35px;
+    padding: 12px 33px 17px 33px;
     font-size: 96px;
     font-weight: bold;
     line-height: 145.5px;
@@ -153,18 +172,32 @@
     min-width: @desktop-width;
   }
 
+  .advantage__title-wrapper {
+    margin-top: 80px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
   .advantage__title-offer {
     margin-left: auto;
     margin-right: auto;
+    font-size: 50px;
+    margin-top: 14px;
+    line-height: 61px;
+    min-width: 600px;
   }
 
-  .advantage__title-svg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-    height: 280px;
-    margin-bottom: -112px;
+  .advantage__title-question {
+    font-size: 50px;
+    min-width: 740px;
+  }
+
+  .advantage__title-triangle {
+    margin-top: 21px;
+    margin-bottom: -63px;
+    height: 203px;
   }
 
   .advantage__app-desktop-wrapper {
@@ -176,6 +209,21 @@
     margin-right: auto;
   }
 
+  .advantage__app-desktop {
+    margin-top: -92px;
+    margin-left: 17px;
+    width: 288px;
+    height: 300px;
+
+    &:nth-child(2) {
+      margin-left: 35px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 32px;
+    }
+  }
+
   .advantage__app-screen {
     display: none;
   }
@@ -184,33 +232,46 @@
     background-color: inherit;
   }
 
-  .advantage__research-wrapper-container {
-    width: 890px;
-    background-position: 90px 60px;
-    background-size: 245px 275px;
+  .advantage__research-time {
+    left: 31px;
+    top: 104px;
+    font-size: 119px;
+    padding: 35px 41px 40px 45px;
   }
 
-  .advantage__research-time {
-    left: 109px;
+  .advantage__research-wrapper-container {
+    width: 960px;
+    background-position: 13px 32px;
+    background-size: 297px;
+    padding-top: 41px;
+    padding-bottom: 33px;
   }
 
   .advantage__research-wrapper {
     width: 440px;
+    margin-left: 347px;
+    word-spacing: 1px;
   }
 
   .advantage__research-title {
-    min-width: 300px;
+    min-width: 301px;
     line-height: 30px;
+    margin-bottom: 0;
   }
 
   .advantage__research-text {
-    width: 520px;
+    width: 528px;
     font-size: 18px;
     line-height: 30px;
+    margin-top: 23px;
+    margin-bottom: 0;
   }
 
   .advantage__research-link {
     font-size: 18px;
     text-decoration: underline;
+    margin-top: 34px;
+    display: inline-block;
+    margin-left: 30px;
   }
 }

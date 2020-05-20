@@ -9,5 +9,3 @@ close.onclick = function() {
 open.onclick = function() {
   nav.classList.toggle('active');
 };
-
-

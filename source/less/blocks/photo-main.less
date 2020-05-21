@@ -87,6 +87,7 @@
 }
 
 .photo-main__slider {
+  /* stylelint-disable property-no-vendor-prefix */
   -webkit-appearance: none;
   width: 240px;
   height: 2px;
@@ -97,19 +98,13 @@
   }
 }
 
-.photo-main__slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 13px;
-  height: 13px;
-  border: 2px solid #d22856;
-}
-
 .photo-main__slider:nth-of-type(1),
 .photo-main__slider:nth-of-type(2) {
   display: none;
 }
 
 .photo-main__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
   width: 15px;
   height: 15px;
   border: 2px solid #d22856;

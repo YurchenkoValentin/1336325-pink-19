@@ -30,4 +30,3 @@
     evt.preventDefault();
     popup.classList.remove("show");
   });
-

@@ -87,6 +87,7 @@
 }
 
 .photo-main__slider {
+  -webkit-appearance: none;
   width: 240px;
   height: 2px;
   background: black;
@@ -94,6 +95,13 @@
   &:focus {
     outline: none;
   }
+}
+
+.photo-main__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #d22856;
 }
 
 .photo-main__slider:nth-of-type(1),

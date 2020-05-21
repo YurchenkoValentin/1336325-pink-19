@@ -1,4 +1,4 @@
-.popup {
+.popup__success {
   display: none;
   position: fixed;
   background-color: white;
@@ -13,7 +13,7 @@
   padding-top: 50px;
 }
 
-.popup-error {
+.popup__error {
   display: none;
   position: fixed;
   background-color: white;
@@ -28,35 +28,38 @@
   padding-top: 50px;
 }
 
-.show.popup {
+.show.popup__success {
   display: block;
 }
 
-.show.popup-error {
+.show-e.popup__error {
   display: block;
 }
 
-.active.popup {
+.active.popup__success {
   display: block;
   padding-bottom: 0;
   margin-bottom: 0;
   border: 0;
 }
 
-.popup__wrapper-text {
+.popup__success-wrapper-text,
+.popup__error-wrapper-text  {
   margin-left: auto;
   margin-right: auto;
   width: 396px;
 }
 
-.popup__title {
+.popup__success-title,
+.popup__error-title  {
   font-size: 30px;
   line-height: 40px;
   text-align: center;
   margin: 0;
 }
 
-.popup__text {
+.popup__success-text,
+.popup__error-text {
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -64,7 +67,8 @@
   margin-bottom: 0;
 }
 
-.popup__wrapper-button {
+.popup__success-wrapper-button,
+.popup__error-wrapper-button  {
   background-color: #e5e5e5;
   text-align: center;
   padding-top: 50px;
@@ -72,7 +76,8 @@
   margin-top: 54px;
 }
 
-.popup__button {
+.popup__success-button,
+.popup__error-button  {
   background-color: #2aab6d;
   color: white;
   font-weight: bold;

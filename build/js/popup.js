@@ -13,17 +13,15 @@
     if (!last_name.value || !first_name.value || !email.value) {
       evt.preventDefault();
       popuperror.classList.add("show-e");
+    } else {
+      evt.preventDefault();
+      popup.classList.add("show");
     }
   });
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popuperror.classList.remove("show-e");
-  });
-
-  document.addEventListener("submit", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("show");
   });
 
   close_s.addEventListener("click", function (evt) {

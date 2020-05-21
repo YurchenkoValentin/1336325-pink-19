@@ -1,3 +1,5 @@
+@import "../variable.less";
+
 .popup__success {
   display: none;
   position: fixed;
@@ -6,7 +8,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 780px;
+  width: 320px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   margin-left: auto;
   margin-right: auto;
@@ -21,7 +23,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 780px;
+  width: 320px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   margin-left: auto;
   margin-right: auto;
@@ -47,33 +49,37 @@
 .popup__error-wrapper-text {
   margin-left: auto;
   margin-right: auto;
-  width: 396px;
+  width: 274px;
 }
 
 .popup__success-title,
 .popup__error-title {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
   margin: 0;
 }
 
 .popup__success-text,
 .popup__error-text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #283645;
   margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .popup__success-wrapper-button,
 .popup__error-wrapper-button {
-  background-color: #e5e5e5;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 54px;
-  margin-top: 54px;
+}
+
+.popup__success-wrapper-button {
+  background-color: #f2f2f2;
+  margin-top: 37px;
 }
 
 .popup__success-button,
@@ -83,6 +89,74 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  padding: 22px 155px;
+  padding: 14px 125px;
   cursor: pointer;
+}
+.popup__success-button {
+  padding: 14px 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .popup__success,
+  .popup__error {
+    width: 460px;
+  }
+
+  .popup__success-title,
+  .popup__error-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__success-wrapper-text,
+  .popup__error-wrapper-text {
+    width: 320px;
+  }
+
+  .popup__success-text,
+  .popup__error-text {
+    font-size: 18px;
+  }
+
+  .popup__error-button {
+    padding-left: 145px;
+    padding-right: 145px;
+  }
+
+  .popup__success-button {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup__success,
+  .popup__error {
+    width: 780px;
+  }
+
+  .popup__success-wrapper-text,
+  .popup__error-wrapper-text {
+    width: 400px;
+  }
+
+  .popup__success-text,
+  .popup__error-text {
+    width: 400px;
+  }
+
+  .popup__success-wrapper-button,
+  .popup__error-wrapper-button {
+    background-color: #f2f2f2;
+    margin-top: 62px;
+  }
+
+  .popup__success-wrapper-button {
+    margin-top: 39px;
+  }
+
+  .popup__success-button {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
 }

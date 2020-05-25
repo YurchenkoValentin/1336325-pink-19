@@ -147,6 +147,15 @@
   cursor: pointer;
   width: 40px;
   height: 35px;
+
+  &:disabled {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    margin-left: 2.9px;
+    margin-top: 1.5px;
+    width: 37px;
+    height: 36px;
+  }
 }
 
 .form__platform-radio-label {
@@ -180,6 +189,14 @@
   }
 }
 
+.form__platform-radio:disabled + .form__platform-radio-label {
+  color: #c0c0c0;
+}
+
+.form__platform-radio:disabled + .form__platform-radio-label:hover:before {
+  border-color: #e2e2e2;
+}
+
 .form__platform-radio-label:hover::before {
   border-color: #283645;
 }
@@ -201,10 +218,6 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-
-  &:disabled {
-    color: #e5e5e5;
-  }
 }
 
 .form__achievement-checkbox {
@@ -213,6 +226,20 @@
   cursor: pointer;
   width: 35px;
   height: 35px;
+
+  &:disabled {
+    background-color: #f2f2f2;
+    margin-left: 1.5px;
+    margin-top: 1.5px;
+  }
+}
+
+.form__achievement-checkbox:disabled + .form__achievement-checkbox-label {
+  color: #c0c0c0;
+}
+
+.form__achievement-checkbox:disabled + .form__achievement-checkbox-label:hover:before {
+  border-color: #e2e2e2;
 }
 
 .form__achievement-checkbox-label {

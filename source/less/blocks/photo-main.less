@@ -1,6 +1,10 @@
 @import "../mixin.less";
 @import "../variable.less";
 
+.photo-main {
+  margin-top: -15px;
+}
+
 .photo-main__text-wrapper {
   color: white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -8,7 +12,7 @@
   background-position: top center;
   background-size: cover;
   min-width: 320px;
-  padding-top: 24px;
+  padding-top: 39px;
   padding-bottom: 79px;
   margin-bottom: 0;
   background-position-y: -60px;
@@ -231,18 +235,22 @@
 
 
 @media (min-width: @tablet-width) {
+  .photo-main {
+    margin-top: -104px;
+  }
+
   .photo-main__text-wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    padding-top: 70px;
+    padding-top: 172px;
     padding-bottom: 140px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 177%;
-      background-position-y: -104px;
+      background-size: 181%;
+      background-position-y: -5px;
     }
   }
 

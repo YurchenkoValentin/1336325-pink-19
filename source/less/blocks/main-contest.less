@@ -1,10 +1,12 @@
 @import "../mixin.less";
 @import "../variable.less";
 
+.main-contest {
+  margin-top: -64px;
+}
 
 .main-contest__text-wrapper {
   box-sizing: border-box;
-  height: 170px;
   min-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -12,12 +14,13 @@
   background-color: #263441;
   background-position: center;
   background-size: cover;
-  padding-top: 28px;
+  padding-top: 93px;
+  padding-bottom: 54px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: cover;
-    background-position-y: -71px;
+    background-position-y: -7px;
   }
 }
 
@@ -50,12 +53,16 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-contest {
+    margin-top: -109px;
+  }
+
   .main-contest__text-wrapper {
-    height: 330px;
     min-width: 660px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 69px;
+    padding-top: 179px;
+    padding-bottom: 78px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center;
     background-size: cover;
@@ -63,7 +70,7 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 181%;
-      background-position-y: -111px;
+      background-position-y: 0;
     }
   }
 

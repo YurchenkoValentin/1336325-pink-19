@@ -13,7 +13,17 @@
 
 .map__source {
   width: 100%;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .map {
@@ -27,6 +37,15 @@
 
   .map__source {
     height: 374px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -37,6 +56,15 @@
 
   .map__source {
     height: 500px;
+    background-image: url("../img/bg-map-destop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .map__polygon {

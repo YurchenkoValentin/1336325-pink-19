@@ -45,9 +45,22 @@
   height: fit-content;
   margin-top: 5px;
   letter-spacing: 0.4px;
+  outline: none;
 
   &::placeholder {
     color: #283645;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
+
+  &:active {
+    border-color: #d22856;
   }
 }
 
@@ -56,6 +69,10 @@
 }
 
 .form__name-info-input:active {
+  border-color: #d22856;
+}
+
+.form__name-info-input:focus {
   border-color: #d22856;
 }
 
@@ -128,6 +145,8 @@
   appearance: none;
   position: absolute;
   cursor: pointer;
+  width: 40px;
+  height: 35px;
 }
 
 .form__platform-radio-label {
@@ -182,13 +201,18 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+
+  &:disabled {
+    color: #e5e5e5;
+  }
 }
 
 .form__achievement-checkbox {
   appearance: none;
   position: absolute;
   cursor: pointer;
-  outline: none;
+  width: 35px;
+  height: 35px;
 }
 
 .form__achievement-checkbox-label {
@@ -266,6 +290,19 @@
   font-size: 18px;
   line-height: 30px;
   margin-top: 18px;
+  outline: none;
+}
+
+.form__emotions-textarea:hover {
+  border-color: #283645;
+}
+
+.form__emotions-textarea:active {
+  border-color: #d22856;
+}
+
+.form__emotions-textarea:focus {
+  border-color: #d22856;
 }
 
 .form__submit-wrapper {
@@ -535,11 +572,15 @@
     width: 660px;
     display: flex;
     order: 5;
-    margin-top: 54px;
+    margin-top: 61px;
   }
 
   .form__emotions-container {
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    border: 2px solid #e2e2e2;
+    padding-left: 57px;
+    padding-right: 56px;
+    padding-bottom: 47px;
   }
 
   .form__fieldset-emotions {
@@ -554,13 +595,15 @@
 
   .form__emotions-title {
     width: 252px;
+    margin-top: -9px;
+    background-color: #ffffff;
   }
 
   .form__emotions-textarea {
-    width: 496px;
+    width: 499px;
     height: 192px;
     margin-top: 37px;
-    padding-left: 17px;
+    padding-left: 16px;
   }
 
   .form__submit-wrapper {
@@ -735,7 +778,16 @@
   }
 
   .form__emotions-container {
-    margin-top: 53px;
+    margin-top: 62px;
+    border: 2px solid #e2e2e2;
+    padding-left: 57px;
+    padding-right: 56px;
+    padding-bottom: 37px;
+  }
+
+  .form__emotions-title {
+    margin-top: -9px;
+    background-color: white;
   }
 
   .form__emotions-wrapper {

@@ -2,10 +2,15 @@ var nav = document.querySelector('.main-nav');
 var close = document.querySelector('.main-nav__close-icon');
 var open = document.querySelector('.main-nav__burger-icon');
 
-close.onclick = function() {
-  nav.classList.toggle('active');
-};
+document.querySelector('.main-nav').classList.add('main-nav--hide');
 
 open.onclick = function() {
-  nav.classList.toggle('active');
+  nav.classList.remove('main-nav--show');
+  nav.classList.add('main-nav--hide');
 };
+
+close.onclick = function() {
+  nav.classList.remove('main-nav--hide');
+  nav.classList.add('main-nav--show');
+};
+
